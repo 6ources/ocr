@@ -20,7 +20,7 @@ file_bytes = io.BytesIO(compressedimage)
 
 result = requests.post(url_api,
               files = {x+"."+y: file_bytes},
-              data = {"apikey": "helloworld",
+              data = {"apikey": "",
                       "language": "eng"})
 
 result = result.content.decode()
